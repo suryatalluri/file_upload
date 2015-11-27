@@ -28,12 +28,13 @@ Application.$controller("MainPageController", ["$scope", function ($scope) {
 var _MainPage_Variables_ ={}
 </script>
 <script id="Main.html" type="text/ng-template">
-<wm-page data-ng-controller="MainPageController" name="page1">
+<wm-page name="page1" data-ng-controller="MainPageController">
     <wm-left-panel content="leftnav" name="left_panel1"></wm-left-panel>
     <wm-mobile-navbar name="mobile_navbar1"></wm-mobile-navbar>
     <wm-content name="content1">
-        <wm-page-content columnwidth="12" name="page_content1">
+        <wm-page-content name="page_content1" columnwidth="12">
             <wm-fileupload name="fileupload1" service="FileService" operation="uploadFile"></wm-fileupload>
+            <wm-button class="btn-default" type="button" name="button1" caption="Button"></wm-button>
         </wm-page-content>
     </wm-content>
 </wm-page>
